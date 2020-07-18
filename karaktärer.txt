@@ -1,0 +1,26 @@
+
+Spelare:Joakim
+Spel: DnD
+Namn: elefanter
+Ras: i
+Ålder: brallan
+Spelare:Joakim
+Spel: DoD
+Namn: myror
+Ras: i
+Ålder: brallan
+Spelare:Jockeboi
+Spel: DrakarOchDemoner
+Namn: Gregor
+Ras: Dvärg
+Ålder: 69
+Spelare:Viggolito
+Spel: DrakarOchDemoner
+Namn: Barbara
+Ras: Alv
+Ålder: 420
+Spelare:Axel
+Spel: DrakarOchDemoner
+Namn: null
+Ras: null
+Ålder: null
