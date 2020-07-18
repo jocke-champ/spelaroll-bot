@@ -24,3 +24,14 @@ Spel: DnD
 Namn: myrorna
 Ras: i
 Ålder: ball
+Spelare:Joakim
+Spel: DnD
+Namn: myggor
+Ras: i
+Ålder: brallan
+Spelare:Joakim
+Spel: 1
+Namn: 2
+Ras: 3
+Ålder: 4
+undefined5
