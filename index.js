@@ -1,7 +1,7 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix } = require('./config.json'); //can add token
-const token = process.env.BOT_TOKEN;
+const { prefix, token } = require('./config.json'); //can add token
+//const token = process.env.BOT_TOKEN;
 const bot = new Discord.Client(); //bot för bot message
 bot.commands = new Discord.Collection();
 
