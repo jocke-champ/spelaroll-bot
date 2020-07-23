@@ -1,7 +1,7 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
-
+const { prefix } = require('./config.json'); //can add token
+const token = process.env.BOT_TOKEN;
 const bot = new Discord.Client(); //bot för bot message
 bot.commands = new Discord.Collection();
 
@@ -54,4 +54,4 @@ bot.on('message', (msg) => {
 //Loggar in på Discord med app token som ligger i config.json
 //bot.login(token);
 //bot.login(process.env.token);
-bot.login(process.env.BOT_TOKEN);
+bot.login(token).catch(err => console.log(err));
