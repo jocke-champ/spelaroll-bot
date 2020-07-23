@@ -1,6 +1,0 @@
-
-Spelare:”null”
-Spel: ”null”
-Namn: ”null”
-Ras: ”null”
-Ålder: ”null”

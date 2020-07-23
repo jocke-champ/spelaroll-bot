@@ -52,4 +52,5 @@ bot.on('message', (msg) => {
 });
 
 //Loggar in på Discord med app token som ligger i config.json
-bot.login(token);
+//bot.login(token);
+bot.login(process.env.token);

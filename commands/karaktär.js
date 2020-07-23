@@ -5,7 +5,21 @@ module.exports = {
     name: 'karaktär',
     description: 'Sparar en karaktär i ett specifikt text-dokument',
     execute(msg, args) {
-        var namn = args[0]; //namn blir andra elementet i arrayen (namnet)
+        var namn;
+        if(args[0] == 'joakim'){
+            namn = 'file1';
+        } else if(args[0] == 'axel'){
+            namn = 'file2';
+        } else if(args[0] == 'gustaf'){
+            namn = 'file3';
+        } else if(args[0] == 'viggo'){
+            namn = 'file4';
+        } else if(args[0] == 'theo'){
+            namn = 'file4';
+        } else {
+            console.log('inte korrekt namn angivet');
+            msg.channel.send('var snäll och ange ett av följande namn: joakim, axel, viggo eller theo.');
+        }
         var dndtext = ['Spelare:', 'Spel: ', 'Namn: ', 'Ras: ', 'Ålder: ' ];
         var logger = fs.createWriteStream(namn + '.txt', { 
             flags: 'a'

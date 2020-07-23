@@ -1,6 +1,0 @@
-
-Spelare:smygrasist
-Spel: DnD
-Namn: myror
-Ras: i
-Ålder: brallan
