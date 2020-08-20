@@ -6,5 +6,5 @@ En Discord-bot för spelgruppen SpelaRoll
 
 Om du vill köra boten lokalt se till att ha NodeJS installerat och kör:
 ```sh
-$ npm install -d
+$ npm install
 ```
