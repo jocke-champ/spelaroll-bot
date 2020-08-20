@@ -37,35 +37,57 @@
     $data = get_values($content, $cols);
     
 ?>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<title>Karaktärer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<link rel="icon" type="image/png" href="table-images/icons/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="table-vendor/bootstrap/css/bootstrap.min.css"> 
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="table-vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css" href="table-vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="table-vendor/perfect-scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="table-css/util.css">
+<link rel="stylesheet" type="text/css" href="table-css/main.css">
 </head>
+<style>
+<?php
+echo "table-vendor/bootstrap/css/bootstrap.min.css";
+echo "fonts/font-awesome-4.7.0/css/font-awesome.min.css";
+echo "table-vendor/animate/animate.css";
+echo "table-vendor/select2/select2/min/css";
+echo "table-vendor/perfect-scrollbar/perfect-scrollbar.css";
+echo "table-css/util.css";
+echo "table-css/main.css";
+?>
+</style>
 <body>
     
-</body>
-</html>
-
-<div class="container">
-    <table class="table table-bordered" style="margin-top: 30px">
-        <thead>
+<div class="limiter">
+<div class="container-table100">
+<div class="table100 ver6 m-b-110">
+<table data-vertable="ver6">
+<thead>
             <?php
+		echo "<tr class='row100 head'>";
+		$c = 1;
                 foreach($cols as $col){
-                    echo "<th>" . $col . "</th>";
-                }
+		$c++;
+                    echo "<th class='column100 column1' data-column='column$c'>" . $col . "</th>";
+                
+		}
             ?>
             
         </thead>
         <tbody>
             <?php 
             foreach($data as $tr) {
-                echo "<tr>";
+                echo "<tr class='row100'>";
                 for($i = 0; $i < count($cols); $i++){
                     if(array_key_exists($i, $tr)){
-                        echo "<td>" . $tr[$i] . "</td>";
+                        echo "<td class='column100 column$i' data-column='column$i'>" . $tr[$i] . "</td>";
                     } else {
                         echo "<td></td>";
                     }
@@ -76,3 +98,6 @@
         </tbody>
     </table>
 </div>
+</body>
+</html>
+

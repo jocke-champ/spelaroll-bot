@@ -1,0 +1,6 @@
+
+Spelare:axel
+Spel: gammal
+Namn: fattig
+Ras: gubbe
+Ålder: 72
